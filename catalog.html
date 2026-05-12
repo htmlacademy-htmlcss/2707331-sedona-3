@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  
+
   <body>
-    <header class="page-header">
+    <header>
       <a class="logo" href="index.html">
         <img src="#" alt="Логотип Седона">
       </a>
@@ -42,7 +42,7 @@
           </li>
         </ul>
       </nav>
-      </header>
+    </header>
 
     <main>
       <section class="global-filters">
@@ -63,12 +63,10 @@
             Wi-Fi
           </label>
         </fieldset>
-
         <fieldset class="filters-fieldset">
           <legend class="filters-subtitle">Тип Жилья:</legend>
           <label>
-            <input type="radio" name="housing" value="hotel">
-            Гостиница
+            <input type="radio" name="housing" value="hotel">Гостиница
           </label>
           <label>
             <input type="radio" name="housing" value="motel">Мотель
@@ -77,11 +75,17 @@
             <input type="radio" name="housing" value="apartments">Апартаменты
           </label>
         </fieldset>
-
         <fieldset class="filters-fieldset">
           <legend class="filters-subtitle">Стоимость,₽:</legend>
           <label>от
-            <input type="number" value="0">
+            <input type="number" min="0" max="9000" value="0">
+          </label>
+          <label>до
+            <input type="number" min="0" max="9000" value="9000">
+          </label>
+          <label>
+            <input type="range" min="0" max="9000" value="0">
+          </label>
         </ul>
       </section>
 
@@ -129,7 +133,10 @@
             <p>Рейтинг: 6.9</p>
           </li>
         </ul>
-        <ul class="catalog-pagination">
+      </section>
+
+      <section class="catalog-pagination">
+        <ul class="catalog-pagination-list">
           <li class="catalog-pagination-item catalog-pagination-item-current">
             <a class="catalog-pagination-link" aria-current="page">1</a>
           </li>
@@ -150,21 +157,15 @@
       </section>
 
       <section class="subscribe">
-        <h2 class="subscribe-title">
-          Подпишитесь на рассылку
-        </h2>
-        <p class="subscribe-description">
-          Только полезная информация и никакого спама, <br> честное бойскаутское!
-        </p>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form">
           <input class="subscribe-field" type="email" placeholder="Ваш E-mail">
-          <button class="subscribe-button">
-            Подписаться
-          </button>
+          <button class="subscribe-button">Подписаться</button>
         </form>
       </section>
     </main>
-    
+
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-item">
