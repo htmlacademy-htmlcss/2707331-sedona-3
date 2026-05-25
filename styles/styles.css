@@ -84,31 +84,15 @@ body {
     text-align: center;
 }
 
-.first-ad {
+.blue {
     color: #FFFFFF;
     background-color: #82B3D3;
     text-align: center;
 }
 
-.second-ad {
+.white {
     color: #000000;
     background-color: #83B3D31F;
-}
-
-.third-ad {
-    color: #000000;
-    background-color: #83B3D333;
-}
-
-.fourth-ad {
-    color: #000000;
-    background-color: #83B3D31F;
-}
-
-.fifth-ad {
-    color: #FFFFFF;
-    background-color: #82B3D3;
-    text-align: center;
 }
 
 .service-preview-title {
