@@ -26,14 +26,14 @@
           </li>
         </ul>
 
-        <ul class="navigation-buttons">
+        <ul class="navigation-list-buttons">
           <li class="navigation-item">
-             <a class="navigation-link search-icon" href="#">
+             <a class="navigation-button search-icon" href="#">
               <span class="visually-hidden">Поиск</span>
              </a>
           </li>
           <li class="navigation-item">
-             <a class="navigation-link favorite-icon" href="#">
+             <a class="navigation-button favorite-icon" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="visually-hidden">12</span>
              </a>
@@ -45,7 +45,7 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="main-container page-main">
       <section class="filters">
         <h1 class="filters-title">Гостиницы Седоны</h1>
         <ul class="filters-breadcrumbs-list">
@@ -108,7 +108,7 @@
 
       <section class="catalog-filters">
         <h2 class="catalog-filters-title">Найдено гостиниц: <span>38</span></h2>
-        <select>
+        <select class="sorting">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
@@ -144,6 +144,8 @@
             <span>★★★</span>
             <p>Рейтинг: 6.9</p>
           </li>
+        </ul>
+        <ul class="catalog-list">
           <li class="catalog-item">
             <img src="images/hotel-4.jpg" width="300" height="212" alt="Фото GreenTree Inn">
             <h3 class="catalog-item-title">GreenTree Inn</h3>
@@ -177,9 +179,9 @@
         </ul>
       </section>
 
-      <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+      <section class="subscribe-catalog">
+        <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description-catalog">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form">
           <input class="subscribe-field" type="email" required placeholder="Ваш E-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>
@@ -198,7 +200,7 @@
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy " target="_blank" title="Телеграмм-канал HTML Academy">
             <span class="visually-hidden">Telegram</span>
-            <img src="images/tg.svg" width="18" height="15.1" alt="tg-icon">
+            <img src="images/tg.svg" width="18" height="15" alt="tg-icon">
           </a>
         </li>
         <li class="social-item">
@@ -209,8 +211,8 @@
         </li>
       </ul>
       <a class="footer-number" href="tel:88128121212">+7 (812) 812-12-12</a>
-      <a class="page-footer-contact-logo-htmlacademy" href="https://htmlacademy.ru/">
-        <img class="contact-logo" src="images/htmlacademy.png" width="114.9" height="32.9" alt="Логотип HTML Academy">
+      <a class="contact-logo" href="https://htmlacademy.ru/">
+        <img class="contact-logo" src="images/htmlacademy.png" width="115" height="32" alt="Логотип HTML Academy">
       </a>
     </footer>
   </body>
