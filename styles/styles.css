@@ -110,7 +110,6 @@ span {
     text-align: center;
     color: #000000;
     text-decoration: none;
-
     width: 44px;
     height: 64px;
 }
@@ -274,6 +273,8 @@ span {
     margin-left: auto;
     margin-right: auto;
     margin-top: 81px;
+    width: 75px;
+    height: 72px;
 }
 
 .service-item-title {
@@ -648,7 +649,6 @@ span {
 .social-item {
     padding-left: 30px;
     margin-top: 45px;
-
     min-width: 48px;
     min-height: 40px;
 }
