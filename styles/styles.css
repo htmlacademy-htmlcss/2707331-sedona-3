@@ -34,11 +34,22 @@ body {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 ul {
     list-style-type: none;
+}
+
+span {
+    display: block;
 }
 
 .main-container {
@@ -99,6 +110,9 @@ ul {
     text-align: center;
     color: #000000;
     text-decoration: none;
+
+    width: 44px;
+    height: 64px;
 }
 
 .join-button {
@@ -178,6 +192,7 @@ ul {
     line-height: 21px;
     text-align: center;
     margin: 0;
+    margin-top: 62px;
 }
 
 .advantages-text {
@@ -457,42 +472,63 @@ ul {
 }
 
 .catalog-item {
+    width: 340px;
     padding-left: 20px;
     padding: 20px;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
     box-sizing: border-box;
-    width: 340px;
 }
 
 .more-button {
     font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
     font-size: 16px;
+    width: 140px;
+    height: 36px;
     line-height: 20px;
     font-weight: 700;
+    text-align: center;
     color: #FFFFFF;
     background-color: #756157;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .like-button {
     font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
     font-size: 16px;
+    width: 140px;
+    height: 36px;
     line-height: 20px;
     font-weight: 700;
+    text-align: center;
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .like-checked {
     font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    margin: 0 auto;
     font-size: 16px;
+    width: 140px;
+    height: 36px;
     line-height: 20px;
     font-weight: 700;
+    text-align: center;
     color: #FFFFFF;
     background-color: #7DB54F;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .catalog-pagination-list {
@@ -519,7 +555,6 @@ ul {
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 .subscribe-field {
@@ -607,6 +642,15 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.social-item {
+    padding-left: 30px;
+    margin-top: 45px;
+
+    min-width: 48px;
+    min-height: 40px;
 }
 
 .footer-number {
@@ -618,10 +662,6 @@ ul {
     text-decoration: none;
     margin-left: 41px;
     margin-right: 41px;
-}
-
-.social-item {
-    padding-left: 30px;
 }
 
 .contact-logo {
