@@ -66,6 +66,7 @@ span {
     color: #000000;
     background-color: #FFFFFF;
     padding: 0 70px;
+    height: 64px;
 }
 
 .navigation {
@@ -144,6 +145,7 @@ span {
     background-position: center;
     background-color: #82B3D3;
     padding-bottom: 85px;
+    padding-top: 51px;
 }
 
 .advantages-preview {
