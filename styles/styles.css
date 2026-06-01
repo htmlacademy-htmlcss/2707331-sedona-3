@@ -33,6 +33,10 @@ body {
     background-color: #F2F2F2;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 ul {
     list-style-type: none;
 }
@@ -41,51 +45,48 @@ ul {
     flex-grow: 1;
 }
 
-.visually-hidden {
-    display: none;
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .page-header {
     display: flex;
     color: #000000;
     background-color: #FFFFFF;
-}
-
-.logo {
-    margin-left: 70px;
+    padding: 0 70px;
 }
 
 .navigation {
-    height: 64px;
     display: flex;
-    margin: 0 auto;
+    flex-grow: 1;
 }
 
 .navigation-list {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 339px;
+    flex-grow: 1;
     margin-left: 30px;
-    margin-top: 20px;
 }
 
 .navigation-list-buttons {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 339px;
-    margin-left: 285px;
     margin-top: 20px;
 }
 
 .navigation-link {
     padding-right: 32px;
     font-size: 20px;
+    display: block;
     line-height: 24px;
     font-weight: 700;
     text-align: center;
     color: #000000;
+    padding: 20px 16px;
+    white-space: nowrap;
     text-decoration: none;
 }
 
@@ -101,11 +102,11 @@ ul {
 }
 
 .join-button {
+    font-family: inherit;
+    border: none;
     border-radius: 4px;
     width: 160px;
     height: 36px;
-    margin-left: 70px;
-    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -113,6 +114,7 @@ ul {
     color: #FFFFFF;
     background-color: #756157;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .page-main {
@@ -121,7 +123,6 @@ ul {
 }
 
 .welcome {
-    height: 485px;
     background-image: url("../images/index-background.jpg");
     text-align: center;
     background-size: cover;
@@ -129,26 +130,26 @@ ul {
     background-position: center;
     background-color: #82B3D3;
     padding-top: 51px;
+    padding-bottom: 85px;
 }
 
 .advantages-preview {
-    height: 261px;
     margin-top: 0;
+    padding: 69px 0;
 }
 
 .advantages-preview-title {
-    padding-top: 69px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 0 25px;
 }
 
 .advantages-preview-description {
-    gap: 25px;
-    padding-bottom: 69px;
     text-align: center;
+    margin: 0;
 }
 
 .advantages-list {
@@ -160,6 +161,7 @@ ul {
 
 .advantages-row {
     display: flex;
+    margin: 0;
 }
 
 .advantages-item-title {
@@ -168,12 +170,14 @@ ul {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .advantages-item-description {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    margin: 0;
 }
 
 .advantages-text {
@@ -182,11 +186,13 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .advantages-row img {
     width: 800px;
     display: block;
+    margin: 0;
 }
 
 .advantages-small {
@@ -217,30 +223,30 @@ ul {
 }
 
 .service-main-preview {
-    height: 246px;
     margin-top: 0;
+    padding: 69px 0;
 }
 
 .service-preview-title {
-    padding-top: 64px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 0 20px;
 }
 
 .service-preview-description {
     text-align: center;
-    gap: 20px;
-    padding-bottom: 64px;
+    margin: 0;
 }
 
 .service-list {
     display: flex;
-    justify-content: space-between;
     margin: 0;
     padding: 0;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .service-item {
@@ -256,6 +262,7 @@ ul {
 }
 
 .service-item-title {
+    margin-top: 128px;
     padding-top: 30px;
     font-size: 24px;
     line-height: 28px;
@@ -265,7 +272,6 @@ ul {
 }
 
 .service-item-description {
-    gap: 30px;
     padding-bottom: 81px;
     font-size: 18px;
     line-height: 21px;
@@ -273,25 +279,30 @@ ul {
 }
 
 .intresting {
-    height: 406px;
     margin-top: 0;
+    padding: 96px 0;
 }
 
 .intresting-title {
-    padding-top: 96px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 0 20px;
 }
 
 .intresting-description {
-    padding-top: 20px;
+    font-size: 22px;
+    line-height: 21px;
     text-align: center;
+    margin: 0;
+    margin-bottom: 54px;
 }
 
 .intresting-button {
+    font-family: inherit;
+    border: none;
     border-radius: 4px;
     display: block;
     margin: 0 auto;
@@ -304,6 +315,7 @@ ul {
     color: #FFFFFF;
     background-color: #756157;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .filters {
@@ -314,12 +326,12 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #82B3D3;
+    padding: 0 70px;
     padding-top: 51px;
 }
 
 .filters-title {
     margin-top: 0;
-    margin-left: 70px;
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
@@ -329,7 +341,6 @@ ul {
 .filters-breadcrumbs-list {
     display: flex;
     margin-top: 8px;
-    margin-left: 70px;
     padding-left: 10px;
 }
 
@@ -344,7 +355,7 @@ ul {
 .filters-list {
     display: flex;
     margin-top: 40px;
-    margin-left: 60px;
+    flex-wrap: wrap;
 }
 
 .filters-fieldset {
@@ -368,24 +379,39 @@ ul {
 
 .accept-button {
     font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
     font-size: 16px;
+    width: 191px;
+    height: 36px;
     line-height: 20px;
     font-weight: 700;
+    text-align: center;
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 32px;
 }
 
 .clean-button {
     font-family: inherit;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
     font-size: 16px;
+    width: 191px;
+    height: 36px;
     line-height: 20px;
     font-weight: 700;
-    background-color: transparent;
-    border: none;
-    outline: none;
+    text-align: center;
     color: #FFFFFF;
+    background-color: transparent;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .catalog-filters {
@@ -394,8 +420,6 @@ ul {
 
 .catalog-filters-title {
     margin-top: 50px;
-    margin-left: 70px;
-    padding-left: 10px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -403,30 +427,41 @@ ul {
 }
 
 .sorting {
+    font-family: inherit;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: auto;
     width: 292px;
     height: 49px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
     color: #000000;
     text-decoration: none;
 }
 
+.catalog-filters {
+    padding: 0 70px;
+}
+
+.catalog {
+    padding: 0 70px;
+}
+
 .catalog-list {
     display: flex;
-    margin-left: 40px;
     margin-top: 40px;
+    padding-left: 0;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .catalog-item {
     padding-left: 20px;
     padding: 20px;
-    margin: 20px;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .more-button {
@@ -461,7 +496,7 @@ ul {
 
 .catalog-pagination-list {
     display: flex;
-    margin: 70px;
+    padding: 0;
 }
 
 .catalog-pagination-item {
@@ -469,17 +504,17 @@ ul {
 }
 
 .subscribe-index {
-    height: 415px;
-    background-image: url("../images/subscribe-background.jpg");
+    margin-top: 0;
+    padding: 96px 0;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-color: #82B3D3;
+    background-image: url(../images/subscribe.jpg);
 }
 
 .subscribe-catalog {
-    height: 415px;
+    margin-top: 0;
+    padding: 96px 0;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -490,22 +525,29 @@ ul {
     font-size: 18px;
     line-height: 24px;
     color: #000000;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 4px;
 }
 
 .subscribe-title-index {
-    padding-top: 96px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    margin: 0 0 20px;
     color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
 }
 
 .subscribe-title-catalog {
-    padding-top: 20px;
-    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0 0 20px;
     color: #000000;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .subscribe-description-index {
@@ -535,6 +577,7 @@ ul {
 }
 
 .subscribe-button {
+    border: none;
     border-radius: 4px;
     width: 232px;
     height: 52px;
@@ -546,12 +589,16 @@ ul {
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .page-footer {
-    background-color: #FFFFFF;
     display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
     height: 120px;
+    padding: 0 70px;
 }
 
 .social-list {
@@ -559,20 +606,15 @@ ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    margin-top: 45px;
-    margin-left: 70px;
 }
 
 .footer-number {
     display: block;
-    width: 720px;
-    height: 50px;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     color: #000000;
     text-decoration: none;
-    margin-top: 45px;
     margin-left: 41px;
     margin-right: 41px;
 }
@@ -585,5 +627,4 @@ ul {
     display: flex;
     margin: 0;
     padding: 0;
-    align-items: center;
 }
