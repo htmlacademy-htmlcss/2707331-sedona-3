@@ -8,6 +8,7 @@
   </head>
 
   <body>
+   <div class="page-container">
     <header class="page-header">
       <a class="logo" href="index.html">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -87,10 +88,10 @@
          </fieldset>
          <fieldset class="filters-fieldset">
           <legend class="filters-subtitle">Стоимость, ₽:</legend>
-          <label>от
+          <label>
             <input type="number" min="0" max="9000" value="0">
           </label>
-          <label>до
+          <label>
             <input type="number" min="0" max="9000" value="9000">
           </label>
           <label>
@@ -123,7 +124,6 @@
             <p>Гостиница <span>От 4000 ₽</span></p>
             <button class="more-button">Подробнее</button>
             <button class="like-button">В избранное</button>
-            <span>★★★★</span>
             <p>Рейтинг: 8.5</p>
           </li>
           <li class="catalog-item">
@@ -132,7 +132,6 @@
             <p>Гостиница <span>От 5000 ₽</span></p>
             <button class="more-button">Подробнее</button>
             <button class="like-button like-checked">В избранном</button>
-            <span>★★★★</span>
             <p>Рейтинг: 9.2</p>
           </li>
           <li class="catalog-item">
@@ -141,24 +140,17 @@
             <p>Гостиница <span>От 2500 ₽</span></p>
             <button class="more-button">Подробнее</button>
             <button class="like-button">В избранное</button>
-            <span>★★★</span>
             <p>Рейтинг: 6.9</p>
           </li>
-        </ul>
-        <ul class="catalog-list">
           <li class="catalog-item">
             <img src="images/hotel-4.jpg" width="300" height="212" alt="Фото GreenTree Inn">
             <h3 class="catalog-item-title">GreenTree Inn</h3>
             <p>Гостиница <span>От 1500 ₽</span></p>
             <button class="more-button">Подробнее</button>
             <button class="like-button">В избранное</button>
-            <span>★★</span>
             <p>Рейтинг: 5.0</p>
           </li>
         </ul>
-      </section>
-
-      <section class="catalog-pagination">
         <ul class="catalog-pagination-list">
           <li class="catalog-pagination-item catalog-pagination-item-current">
             <a class="catalog-pagination-link" aria-current="page">1</a>
@@ -215,5 +207,6 @@
         <img class="contact-logo" src="images/htmlacademy.png" width="115" height="32" alt="Логотип HTML Academy">
       </a>
     </footer>
+   </div>
   </body>
 </html>
