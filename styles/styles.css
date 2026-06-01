@@ -457,6 +457,7 @@ ul {
 }
 
 .catalog-item {
+    width: 340px;
     padding-left: 20px;
     padding: 20px;
     border: 1px solid #E5E5E5;
