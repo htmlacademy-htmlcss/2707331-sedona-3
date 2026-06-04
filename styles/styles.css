@@ -14,6 +14,10 @@
     font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
@@ -33,6 +37,10 @@ body {
     background-color: #F2F2F2;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -42,14 +50,6 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-ul {
-    list-style-type: none;
-}
-
-span {
-    display: block;
 }
 
 .main-container {
@@ -86,7 +86,7 @@ span {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    align-items: center;
 }
 
 .navigation-link {
@@ -267,7 +267,7 @@ span {
 
 .service-item {
     width: 400px;
-    height: 385px;
+    padding: 81px 85px;
 }
 
 .service-icon {
@@ -280,20 +280,19 @@ span {
 }
 
 .service-item-title {
-    margin-top: 128px;
-    padding-top: 30px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 0 30px;
 }
 
 .service-item-description {
-    padding-bottom: 81px;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    margin: 0;
 }
 
 .intresting {
@@ -337,7 +336,6 @@ span {
 }
 
 .filters {
-    height: 412px;
     margin-top: 0;
     background-image: url("../images/catalog-background.jpg");
     background-size: cover;
@@ -360,6 +358,7 @@ span {
     display: flex;
     margin-top: 8px;
     padding-left: 10px;
+    margin: 0;
 }
 
 .breadcrumbs-link {
@@ -374,10 +373,13 @@ span {
     display: flex;
     margin-top: 40px;
     flex-wrap: wrap;
+    gap: 70px;
 }
 
 .filters-fieldset {
     border: none;
+    padding: 0;
+    margin: 0;
 }
 
 .filters-subtitle {
@@ -456,6 +458,7 @@ span {
     line-height: 21px;
     color: #000000;
     text-decoration: none;
+    padding-left: 20px;
 }
 
 .catalog-filters {
@@ -467,11 +470,12 @@ span {
 }
 
 .catalog-list {
-    display: flex;
     margin-top: 40px;
+    display: flex;
     padding-left: 0;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 .catalog-item {
@@ -480,7 +484,6 @@ span {
     padding: 20px;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 .more-button {
@@ -536,11 +539,37 @@ span {
 
 .catalog-pagination-list {
     display: flex;
+    margin: 0;
     padding: 0;
 }
 
 .catalog-pagination-item {
-    padding: 8px;
+    display: grid;
+    place-items: center;
+    margin-right: 8px;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #82B3D3;
+    cursor: pointer;
+}
+
+.catalog-pagination-link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.dotted {
+    background-color: transparent;
+    cursor: default;
+}
+
+.current {
+    color: #000000;
+    background-color: #F2F2F2;
 }
 
 .subscribe-index {
@@ -561,12 +590,14 @@ span {
 }
 
 .subscribe-field {
+    font-family: inherit;
     font-size: 18px;
     line-height: 24px;
     color: #000000;
     background-color: #F2F2F2;
     border: none;
     border-radius: 4px;
+    padding-left: 20px;
 }
 
 .subscribe-title-index {
@@ -593,12 +624,18 @@ span {
     padding-top: 20px;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 54px;
+    padding: 0;
 }
 
 .subscribe-description-catalog {
     padding-top: 20px;
     text-align: center;
     color: #000000;
+    margin: 0;
+    margin-bottom: 54px;
+    padding: 0;
 }
 
 .subscribe-form {
@@ -649,7 +686,6 @@ span {
 }
 
 .social-item {
-    padding-left: 30px;
     margin-top: 45px;
     min-width: 48px;
     min-height: 40px;
