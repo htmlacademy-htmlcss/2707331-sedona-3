@@ -371,8 +371,8 @@ ul {
 
 .filters-list {
     display: flex;
-    margin-top: 40px;
     flex-wrap: wrap;
+    height: 160px;
     gap: 70px;
 }
 
@@ -436,6 +436,7 @@ ul {
 
 .catalog-filters {
     display: flex;
+    padding: 0 70px;
 }
 
 .catalog-filters-title {
@@ -460,10 +461,36 @@ ul {
     background-color: #FFFFFF;
     text-decoration: none;
     padding-left: 20px;
+    cursor: pointer;
 }
 
-.catalog-filters {
-    padding: 0 70px;
+.display-list {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    display: flex;
+    gap: 8px;
+    max-width: 160px;
+    min-height: 48px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.display-item {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    border: 2px solid #E5E5E5;
+}
+
+.display-item.checked {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    border: 2px solid #000000;
 }
 
 .catalog {
@@ -485,6 +512,43 @@ ul {
     padding: 20px;
     border: 1px solid #E5E5E5;
     border-radius: 4px;
+}
+
+.image-container {
+    width: 300px;
+    height: 212px;
+    overflow: hidden;
+}
+
+.hotel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.catalog-item-title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.catalog-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.catalog-botton-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 16px;
 }
 
 .more-button {
@@ -521,7 +585,7 @@ ul {
     cursor: pointer;
 }
 
-.like-checked {
+.like-button.checked {
     font-family: inherit;
     border: none;
     border-radius: 4px;
@@ -551,6 +615,8 @@ ul {
     color: #333333;
     background-color: #F2F2F2;
     text-transform: uppercase;
+    margin: 0;
+    margin-top: 16px;
 }
 
 .catalog-pagination-list {
