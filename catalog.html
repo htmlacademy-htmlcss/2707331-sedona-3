@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
@@ -29,12 +30,12 @@
 
         <ul class="navigation-list-buttons">
           <li class="navigation-item">
-             <a class="navigation-button search-icon" href="#">
+             <a class="navigation-button search" href="#">
               <span class="visually-hidden">Поиск</span>
              </a>
           </li>
           <li class="navigation-item">
-             <a class="navigation-button favorite-icon" href="#">
+             <a class="navigation-button favorite" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="visually-hidden">12</span>
              </a>
@@ -51,12 +52,13 @@
         <h1 class="filters-title">Гостиницы Седоны</h1>
         <ul class="filters-breadcrumbs-list">
           <li class="filters-breadcrumbs-item">
-            <a class="breadcrumbs-link-index breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link index" href="index.html">
               <span class="visually-hidden">На главную</span>
             </a>
           </li>
+          <span class="breadcrumbs-link placeholder"></span>
           <li class="filters-breadcrumbs-item">
-            <a class="breadcrumbs-link-catalog breadcrumbs-link" href="catalog.html">
+            <a class="breadcrumbs-link catalog" href="catalog.html">
               <span class="visually-hidden">Гостиницы</span>
             </a>
           </li>
@@ -116,9 +118,9 @@
           <option value="popular">Сначала популярные</option>
         </select>
         <ul class="display-list">
-          <li class="display-item checked"></li>
-          <li class="display-item"></li>
-          <li class="display-item"></li>
+          <li class="display-item checked tile"></li>
+          <li class="display-item card"></li>
+          <li class="display-item list"></li>
         </ul>
       </section>
 
@@ -195,8 +197,8 @@
       </section>
 
       <section class="subscribe-catalog">
-        <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description-catalog">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+        <h2 class="subscribe-title catalog">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description catalog">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form">
           <input class="subscribe-field" type="email" required placeholder="Ваш E-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>
@@ -206,17 +208,17 @@
 
     <footer class="page-footer">
       <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link" href="https://vk.com/htmlacademy" target="_blank" title="Группа вконтакте HTML Academy">
+        <li class="social-item vk">
+          <a class="social-link vk" href="https://vk.com/htmlacademy" target="_blank" title="Группа вконтакте HTML Academy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
-        <li class="social-item">
+        <li class="social-item tg">
           <a class="social-link" href="https://t.me/htmlacademy " target="_blank" title="Телеграмм-канал HTML Academy">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
-        <li class="social-item">
+        <li class="social-item youtube">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" title="Ютуб-канал HTML Academy">
             <span class="visually-hidden">YouTube</span>
           </a>
