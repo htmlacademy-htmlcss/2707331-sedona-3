@@ -154,6 +154,7 @@
       <a class="footer-number" href="tel:88128121212">+7 (812) 812-12-12</a>
       <a class="contact-logo" href="https://htmlacademy.ru/"></a>
     </footer>
+    
     <div class="modal-container">
       <div class="modal modal-search">
         <section class="modal-content">
@@ -193,15 +194,23 @@
             </label>
             <div class="modal-row child">
               <div class="modal-input-title input-title-child">
-                <label for="inputChild">Дети:</label>
-              </div>
-              <div class="modal-num-main child">
-                <input class="modal-input modal-num" type="number" name="adult" value="2">
-                <button class="modal-num-button icon-minus"></button>
-                <button class="modal-num-button icon-plus"></button>
+               <label for="inputChild">Дети:</label>
+               <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  <span class="visually-hidden">Подробнее о количестве детей</span>
+                </button>
+                <div class="tooltip-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </div>
               </div>
             </div>
-            <button class="modal-search-button">Найти</button>
+            <div class="modal-num-main child">
+              <input class="modal-input modal-num" type="number" name="child" value="2">
+              <button class="modal-num-button icon-minus"></button>
+              <button class="modal-num-button icon-plus"></button>
+            </div>
+           </div>
+           <button class="modal-search-button">Найти</button>
           </form>
         </section>
         <button class="modal-close-button">
@@ -211,4 +220,25 @@
     </div>
    </div>
   </body>
+
+  <script>
+    const modal = document.querySelector('.modal-container');
+    const openBtn = document.querySelector('.intresting-button');
+    const closeBtn = document.querySelector('.modal-close-button');
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('is-open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('is-open');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+      modal.classList.remove('is-open');
+    }
+    });
+  </script>
+
 </html>
