@@ -1430,20 +1430,19 @@ input[type="number"]:focus {
 }
 
 .modal-container {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #F2F2F2CC;
-}
-
-.modal-container.is-open {
   display: flex;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2CC;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
 .modal {
@@ -1455,6 +1454,20 @@ input[type="number"]:focus {
   padding: 64px 70px;
   box-shadow: 0 25px 50px 0 #00000026;
   background-color: #FFFFFF;
+  transform: scale(0.9) translateY(20px);
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.modal-container.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-container.is-open .modal {
+  transform: scale(1) translateY(0);
+  opacity: 1;
 }
 
 .modal-close-button {
