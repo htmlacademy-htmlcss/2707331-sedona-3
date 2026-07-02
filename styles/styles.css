@@ -1337,7 +1337,7 @@ input[type="number"]:focus {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 45px 70px 30px;
+  padding: 40px 70px 30px;
 }
 
 .social-list {
@@ -1385,6 +1385,13 @@ input[type="number"]:focus {
 .social-link:active {
   background-color: #D2E3EF;
 }
+
+.footer-number-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding: bottom;
+}  
 
 .footer-number {
   display: block;
