@@ -1349,13 +1349,12 @@ input[type="number"]:focus {
   max-width: 152px;
 }
 
-.social-item {
+.social-link {
+  display: flex;
   width: 47px;
   height: 40px;
-}
-
-.social-link {
-  display: block;
+  justify-content: center;
+  align-items: center;
   background-color: #82B3D3;
   mask-repeat: no-repeat;
   mask-position: center;
@@ -1365,14 +1364,17 @@ input[type="number"]:focus {
 
 .social-link.vk {
   mask-image: url(../icons/socials-vk.svg);
-}
-
-.social-link.youtube {
-  mask-image: url(../icons/socials-youtube.svg);
+  mask-size: 24px 14px;
 }
 
 .social-link.tg {
   mask-image: url(../icons/socials-tg.svg);
+  mask-size: 18px 16px;
+}
+
+.social-link.youtube {
+  mask-image: url(../icons/socials-youtube.svg);
+  mask-size: 22px 17px;
 }
 
 .social-link:hover,
