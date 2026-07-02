@@ -79,10 +79,11 @@ input[type="number"]:focus {
   color: #000000;
   background-color: #FFFFFF;
   padding: 0 70px;
+  align-items: center;
 }
 
 .logo {
-  margin-bottom: -10px;
+  margin-bottom: -12px;
 }
 
 .navigation {
@@ -91,24 +92,24 @@ input[type="number"]:focus {
 }
 
 .navigation-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
-    margin-left: 30px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  margin-left: 30px;
 }
 
 .navigation-list-buttons {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 }
 
 .navigation-link {
   display: inline-block;
   position: relative;
-  padding: 20px 16px;
+  padding: 19px 16px;
   font-size: 20px;
   font-weight: 700;
   color: #000000;
@@ -137,35 +138,35 @@ input[type="number"]:focus {
 }
 
 .navigation-button {
-    display: block;
-    padding: 20px;
-    padding-right: 32px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
-    width: 44px;
-    height: 64px;
-    background-size: 18px 18px;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: block;
+  padding: 18px 12px;
+  padding-right: 32px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  width: 44px;
+  height: 64px;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation-button.search {
-    background-image: url(../icons/search.svg);
+  background-image: url(../icons/search.svg);
 }
 
 .navigation-button.favorite {
-    background-image: url(../icons/favourite.svg);
-    margin-right: 20px;
+  background-image: url(../icons/favourite.svg);
+  margin-right: 19px;
 }
 
 .favorite-number {
   position: absolute;
   top: 11px;
-  margin-left: 5px;
+  margin-left: 8px;
   padding: 5px;
   font-size: 10px;
   line-height: 10px;
@@ -217,16 +218,16 @@ input[type="number"]:focus {
   background-image: url("../images/devider.png"), url("../images/index-background.jpg");
   text-align: center;
   background-size: 100% auto, cover;
-  background-position: bottom, center;
+  background-position: center bottom -1px, center;
   background-repeat: no-repeat;
   background-color: #82B3D3;
-  padding-bottom: 85px;
+  padding-bottom: 76px;
   padding-top: 51px;
 }
 
 .advantages-preview {
   margin-top: 0;
-  padding: 69px 0;
+  padding: 69px 0 90px;
 }
 
 .advantages-preview-title {
@@ -340,7 +341,7 @@ input[type="number"]:focus {
 
 .service-main-preview {
     margin-top: 0;
-    padding: 69px 0;
+    padding: 64px 0;
 }
 
 .service-preview-title {
@@ -374,7 +375,7 @@ input[type="number"]:focus {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 75px;
     height: 72px;
     background-size: contain;
@@ -425,7 +426,7 @@ input[type="number"]:focus {
 
 .intresting-description {
     font-size: 22px;
-    line-height: 21px;
+    line-height: 26px;
     text-align: center;
     margin: 0;
     margin-bottom: 54px;
@@ -472,7 +473,7 @@ input[type="number"]:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #82B3D3;
+    background-color: #578CAE;
     padding: 35px 70px 70px;
 }
 
@@ -530,6 +531,7 @@ input[type="number"]:focus {
   display: flex;
   gap: 70px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .filters-fieldset {
@@ -539,6 +541,7 @@ input[type="number"]:focus {
   margin: 0;
   padding: 0;
   border: none;
+  min-width: 0;
 }
 
 .filters-subtitle {
@@ -547,7 +550,8 @@ input[type="number"]:focus {
   font-weight: 700;
   color: #FFFFFF;
   text-decoration: none;
-  margin-bottom: 32px;
+  text-transform: capitalize;
+  margin: 0 0 32px;
   padding: 0;
 }
 
@@ -595,8 +599,8 @@ input[type="number"]:focus {
 }
 
 .checkbox-label {
-  padding-left: 12px;
-  line-height: 1.2;
+  padding-left: 16px;
+  line-height: 1.28;
   color: #FFFFFF;
   font-size: 18px;
 }
@@ -656,8 +660,8 @@ input[type="number"]:focus {
 }
 
 .radio-label {
-  padding-left: 12px;
-  line-height: 1.2;
+  padding-left: 16px;
+  line-height: 1.28;
   color: #FFFFFF;
   font-size: 18px;
 }
@@ -678,7 +682,7 @@ input[type="number"]:focus {
 .field-wrap {
   display: flex;
   gap: 2px;
-  margin: 0 0 36px;
+  margin: 0 0 28px;
 }
 
 .field {
@@ -712,7 +716,8 @@ input[type="number"]:focus {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  right: 12px;
+  right: 19px;
+  font-size: 18px;
   line-height: 133%;
   text-transform: lowercase;
   color: #0000004D;
@@ -758,7 +763,6 @@ input[type="number"]:focus {
   gap: 32px;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .accept-button {
@@ -767,6 +771,7 @@ input[type="number"]:focus {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  margin-top: 56px;
   font-size: 16px;
   width: 191px;
   height: 36px;
@@ -777,7 +782,6 @@ input[type="number"]:focus {
   background-color: #82B3D3;
   text-transform: uppercase;
   cursor: pointer;
-  margin-bottom: 32px;
   transition: 0.2s ease;
 }
 
@@ -837,14 +841,15 @@ input[type="number"]:focus {
 
 .catalog-filters {
     display: flex;
-    padding: 0 70px;
+    padding: 50px 70px 40px;
+    align-items: center;
 }
 
 .catalog-filters-title {
-    margin-top: 50px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    margin: 0;
     text-transform: uppercase;
 }
 
@@ -853,7 +858,6 @@ input[type="number"]:focus {
   font-family: inherit;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  margin-top: 50px;
   margin-left: auto;
   width: 292px;
   height: 49px;
@@ -887,7 +891,6 @@ input[type="number"]:focus {
 .display-list {
     padding: 0;
     margin: 0;
-    margin-top: 50px;
     display: flex;
     gap: 8px;
     max-width: 160px;
@@ -898,8 +901,8 @@ input[type="number"]:focus {
 
 .display-link {
   display: block;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-repeat: no-repeat;
@@ -945,13 +948,13 @@ input[type="number"]:focus {
 }
 
 .catalog-list {
-  margin-top: 40px;
   display: flex;
   padding-left: 0;
   gap: 20px;
   flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 80px;
   padding: 0;
-  margin-bottom: 79px;
   position: relative;
 }
 
@@ -974,40 +977,40 @@ input[type="number"]:focus {
 }
 
 .image-container {
-    width: 300px;
-    height: 212px;
-    overflow: hidden;
+  width: 300px;
+  height: 212px;
+  overflow: hidden;
 }
 
 .hotel-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .catalog-item-title {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    margin: 0;
-    margin-top: 16px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .catalog-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    margin: 0;
-    margin-top: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .catalog-botton-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    margin: 0;
-    margin-top: 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .more-button {
@@ -1114,17 +1117,18 @@ input[type="number"]:focus {
 }
 
 .catalog-rate-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    margin: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 16px;
 }
 
 .catalog-stars {
   min-width: 24px;
   height: 17px;
-  margin: 25px 0;
-  margin-bottom: -20px;
+  margin: 0;
   background-image: url("../icons/star.svg");
   background-size: 24px 17px;
 }
@@ -1155,7 +1159,6 @@ input[type="number"]:focus {
   background-color: #F2F2F2;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 16px;
 }
 
 .catalog-pagination-list {
@@ -1223,13 +1226,13 @@ input[type="number"]:focus {
     text-align: center;
     background-image: url(../images/subscribe.jpg);
     background-size: cover;
-    background-color: #82B3D3;
+    background-color: #578CAE;
     background-repeat: no-repeat;
 }
 
 .subscribe-catalog {
     margin-top: 0;
-    padding: 96px 0;
+    padding: 96px 0 106px;
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1329,25 +1332,26 @@ input[type="number"]:focus {
 }
 
 .page-footer {
-    display: flex;
-    background-color: #FFFFFF;
-    justify-content: space-between;
-    align-items: center;
-    height: 120px;
-    padding: 0 70px;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 45px 70px 30px;
 }
 
 .social-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+  max-width: 152px;
 }
 
 .social-item {
-  margin-top: 25px;
   mask-repeat: no-repeat;
+  mask-position: center;
   background-color: #82B3D3;
   width: 47px;
   height: 40px;
@@ -1367,28 +1371,28 @@ input[type="number"]:focus {
   mask-image: url(../icons/socials-tg.svg);
 }
 
-.social-item:hover {
+.social-link:hover {
   background-color: #68A2CA;
 }
 
-.social-item:focus-within {
+.social-link:focus-within {
   background-color: #68A2CA;
 }
 
-.social-item:active {
+.social-link:active {
   background-color: #D2E3EF;
 }
 
 .footer-number {
-    display: block;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
-    margin-left: 41px;
-    margin-right: 41px;
-    transition: 0.2s ease;
+  display: block;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 41px;
+  margin-right: 41px;
+  transition: 0.2s ease;
 }
 
 .footer-number:hover {
