@@ -1349,33 +1349,31 @@ input[type="number"]:focus {
   max-width: 152px;
 }
 
-.social-item {
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: #82B3D3;
+.social-link {
+  display: block;
   width: 47px;
   height: 40px;
-  cursor: pointer;
-  transition: 0.2s ease;
+  background-color: #82B3D3;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  transition: background-color 0.2s ease;
 }
 
-.social-item.vk {
+.social-link.vk {
   mask-image: url(../icons/socials-vk.svg);
 }
 
-.social-item.youtube {
+.social-link.youtube {
   mask-image: url(../icons/socials-youtube.svg);
 }
 
-.social-item.tg {
+.social-link.tg {
   mask-image: url(../icons/socials-tg.svg);
 }
 
-.social-link:hover {
-  background-color: #68A2CA;
-}
-
-.social-link:focus-within {
+.social-link:hover,
+.social-link:focus {
   background-color: #68A2CA;
 }
 
