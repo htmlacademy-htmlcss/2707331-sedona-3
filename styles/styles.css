@@ -14,54 +14,52 @@
     font-display: swap;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-family: "PT Sans", sans-serif;
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #000000;
-    background-color: #F2F2F2;
-}
-
-ul {
-    list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 input[type='number'],
 input[type="number"]:hover,
 input[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .main-container {
@@ -98,6 +96,7 @@ input[type="number"]:focus {
   padding: 0;
   flex-grow: 1;
   margin-left: 30px;
+  list-style-type: none;
 }
 
 .navigation-list-buttons {
@@ -105,6 +104,7 @@ input[type="number"]:focus {
   margin: 0;
   padding: 0;
   align-items: start;
+  list-style-type: none;
 }
 
 .navigation-link {
@@ -181,13 +181,14 @@ input[type="number"]:focus {
   font-family: inherit;
   border: none;
   border-radius: 4px;
-  width: 160px;
-  height: 36px;
+  min-width: 160px;
+  min-height: 36px;
+  padding: 8px 20px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  margin-top: 14px; 
+  margin-top: 14px;
   color: #FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
@@ -251,6 +252,7 @@ input[type="number"]:focus {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-row {
@@ -366,6 +368,7 @@ input[type="number"]:focus {
     padding: 0;
     justify-content: flex-start;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .service-item {
@@ -441,8 +444,9 @@ input[type="number"]:focus {
     display: block;
     margin: 0 auto;
     font-size: 20px;
-    width: 376px;
-    height: 52px;
+    min-width: 376px;
+    min-height: 52px;
+    padding: 8px 20px;
     line-height: 36px;
     font-weight: 700;
     text-align: center;
@@ -493,6 +497,7 @@ input[type="number"]:focus {
   flex-wrap: wrap;
   margin: 0 0 40px;
   padding: 0;
+  list-style-type: none;
 }
 
 .filters-breadcrumbs-item {
@@ -534,6 +539,7 @@ input[type="number"]:focus {
   gap: 70px;
   flex-wrap: wrap;
   align-items: flex-start;
+  list-style-type: none;
 }
 
 .filters-fieldset {
@@ -557,9 +563,16 @@ input[type="number"]:focus {
   padding: 0;
 }
 
+.checkbox-group {
+  width: 150px;
+  flex-shrink: 0;
+}
+
 .checkbox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
   cursor: pointer;
   user-select: none;
   position: relative;
@@ -601,10 +614,12 @@ input[type="number"]:focus {
 }
 
 .checkbox-label {
-  padding-left: 16px;
   line-height: 1.28;
   color: #FFFFFF;
   font-size: 18px;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .checkbox:hover {
@@ -623,6 +638,8 @@ input[type="number"]:focus {
 
 .radio-group {
   margin-right: 70px;
+  width: 150px;
+  flex-shrink: 0;
 }
 
 .radio {
@@ -759,11 +776,11 @@ input[type="number"]:focus {
 }
 
 .buttons-group {
-  align-self: flex-end;
   display: flex;
   flex-direction: column;
   gap: 32px;
   margin: 0;
+  margin-top: 56px;
   padding: 0;
 }
 
@@ -773,10 +790,10 @@ input[type="number"]:focus {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
-  margin-top: 56px;
   font-size: 16px;
-  width: 191px;
-  height: 36px;
+  min-width: 191px;
+  min-height: 36px;
+  padding: 8px 20px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
@@ -810,8 +827,9 @@ input[type="number"]:focus {
     display: block;
     margin: 0 auto;
     font-size: 16px;
-    width: 191px;
-    height: 36px;
+    min-width: 191px;
+    min-height: 36px;
+    padding: 8px 20px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -899,6 +917,7 @@ input[type="number"]:focus {
     min-height: 48px;
     margin-left: 70px;
     cursor: pointer;
+    list-style-type: none;
 }
 
 .display-link {
@@ -958,6 +977,7 @@ input[type="number"]:focus {
   margin-bottom: 80px;
   padding: 0;
   position: relative;
+  list-style-type: none;
 }
 
 .catalog-list::after {
@@ -1023,8 +1043,9 @@ input[type="number"]:focus {
   border-radius: 4px;
   margin: 0 auto;
   font-size: 16px;
-  width: 140px;
-  height: 36px;
+  min-width: 140px;
+  min-height: 36px;
+  padding: 8px 20px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
@@ -1057,8 +1078,9 @@ input[type="number"]:focus {
     border-radius: 4px;
     margin: 0 auto;
     font-size: 16px;
-    width: 140px;
-    height: 36px;
+    min-width: 140px;
+    min-height: 36px;
+    padding: 8px 20px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -1092,8 +1114,9 @@ input[type="number"]:focus {
     border-radius: 4px;
     margin: 0 auto;
     font-size: 16px;
-    width: 140px;
-    height: 36px;
+    min-width: 140px;
+    min-height: 36px;
+    padding: 8px 20px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -1169,6 +1192,7 @@ input[type="number"]:focus {
     display: flex;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .pagination-item {
@@ -1297,8 +1321,9 @@ input[type="number"]:focus {
 .subscribe-button {
     border: none;
     border-radius: 0 4px 4px 0;
-    width: 232px;
-    height: 52px;
+    min-width: 232px;
+    min-height: 52px;
+    padding: 8px 20px;
     font-family: inherit;
     font-size: 20px;
     line-height: 36px;
@@ -1333,7 +1358,7 @@ input[type="number"]:focus {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
 }
 
 .social-list {
@@ -1343,6 +1368,7 @@ input[type="number"]:focus {
   list-style-type: none;
   flex-wrap: wrap;
   max-width: 152px;
+  list-style-type: none;
 }
 
 .social-link {
@@ -1383,11 +1409,8 @@ input[type="number"]:focus {
 }
 
 .footer-number-list {
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}  
+  list-style-type: none;
+}
 
 .footer-number {
   display: block;
@@ -1794,8 +1817,9 @@ input[type="number"]:focus {
   font-family: inherit;
   border: none;
   border-radius: 10px;
-  width: 100%;
-  height: 60px;
+  min-width: 100%;
+  min-height: 60px;
+  padding: 8px 20px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
