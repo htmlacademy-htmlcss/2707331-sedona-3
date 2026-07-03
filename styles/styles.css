@@ -1368,7 +1368,6 @@ input[type="number"]:focus {
   list-style-type: none;
   flex-wrap: wrap;
   max-width: 152px;
-  list-style-type: none;
 }
 
 .social-link {
