@@ -845,7 +845,7 @@ input[type="number"]:focus {
 }
 
 .clean-button:focus {
-  border: 2px solid #82B3D3;
+  outline: 2px solid #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
 }
