@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -117,17 +117,17 @@
              <input type="number" name="price-to" value="9000" min="0" />
              <span class="hint">До</span>
            </label>
-           </p>
+          </p>
            <div class="field-range">
             <div class="field-range-active">
-              <button class="field-range-from" type="button"></button>
-              <button class="field-range-to" type="button"></button>
+              <button class="field-range-from" type="button" aria-label="Минимальное значение"></button>
+              <button class="field-range-to" type="button" aria-label="Максимальное значение"></button>
             </div>
            </div>
          </fieldset>
          <fieldset class="filters-fieldset buttons-group">
-            <button class="accept-button">Применить</button>
-            <button class="clean-button">Сбросить</button>
+            <button class="accept-button" type="button">Применить</button>
+            <button class="clean-button" type="button">Сбросить</button>
          </fieldset>
         </form>
       </section>
@@ -141,13 +141,13 @@
         </select>
         <ul class="display-list">
           <li class="display-item checked tile">
-            <a class="display-link checked tile" href="#"></a>
+            <a class="display-link checked tile" href="#" aria-label="Вид: плитка, выбран"></a>
           </li>
           <li class="display-item card">
-            <a class="display-link card" href="#"></a>
+            <a class="display-link card" href="#" aria-label="Вид: карточки"></a>
           </li>
           <li class="display-item list">
-            <a class="display-link list" href="#"></a>
+            <a class="display-link list" href="#" aria-label="Вид: список"></a>
           </li>
         </ul>
       </section>
@@ -161,8 +161,8 @@
             <h3 class="catalog-item-title">Amara Resort & Spa</h3>
             <p class="catalog-info">Гостиница<span>От 4000 ₽</span></p>
            <div class="catalog-botton-container">
-            <button class="catalog-botton more-button">Подробнее</button>
-            <button class="like-button">В избранное</button>
+            <button class="catalog-botton more-button" type="button">Подробнее</button>
+            <button class="like-button" type="button">В избранное</button>
            </div>
            <div class="catalog-rate-container">
             <p class="catalog-stars four"></p>
@@ -176,8 +176,8 @@
             <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
             <p class="catalog-info">Гостиница<span>От 5000 ₽</span></p>
             <div class="catalog-botton-container">
-            <button class="catalog-botton more-button">Подробнее</button>
-            <button class="like-button checked">В избранном</button>
+            <button class="catalog-botton more-button" type="button">Подробнее</button>
+            <button class="like-button checked" type="button">В избранном</button>
            </div>
            <div class="catalog-rate-container">
             <p class="catalog-stars four"></p>
@@ -191,8 +191,8 @@
             <h3 class="catalog-item-title">Desert Quail Inn</h3>
             <p class="catalog-info">Гостиница<span>От 2500 ₽</span></p>
            <div class="catalog-botton-container">
-            <button class="catalog-botton more-button">Подробнее</button>
-            <button class="like-button">В избранное</button>
+            <button class="catalog-botton more-button" type="button">Подробнее</button>
+            <button class="like-button" type="button">В избранное</button>
            </div>
            <div class="catalog-rate-container">
             <p class="catalog-stars three"></p>
@@ -206,8 +206,8 @@
             <h3 class="catalog-item-title">GreenTree Inn</h3>
             <p class="catalog-info">Гостиница<span>От 1500 ₽</span></p>
            <div class="catalog-botton-container">
-            <button class="catalog-botton more-button">Подробнее</button>
-            <button class="like-button">В избранное</button>
+            <button class="catalog-botton more-button" type="button">Подробнее</button>
+            <button class="like-button" type="button">В избранное</button>
            </div>
            <div class="catalog-rate-container">
             <p class="catalog-stars two"></p>
@@ -240,14 +240,15 @@
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form">
-          <input class="subscribe-field" type="email" required placeholder="Ваш E-mail">
+          <label for="subscribe-email" class="visually-hidden">Ваш E-mail</label>
+          <input id="subscribe-email" class="subscribe-field" type="email" required placeholder="Ваш E-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <ul class="social-list">
+     <ul class="social-list">
         <li class="social-item">
           <a class="social-link vk" href="https://vk.com/htmlacademy" target="_blank" title="Группа вконтакте HTML Academy">
             <span class="visually-hidden">ВКонтакте</span>
