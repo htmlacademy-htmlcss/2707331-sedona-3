@@ -133,7 +133,8 @@
         <h2 class="subscribe-title index">Подпишитесь на рассылку</h2>
         <p class="subscribe-description index">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
         <form class="subscribe-form">
-          <input class="subscribe-field" type="email" required placeholder="Ваш E-mail">
+          <label for="subscribe-email" class="visually-hidden">Ваш E-mail</label>
+          <input id="subscribe-email" class="subscribe-field" type="email" required placeholder="Ваш E-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -171,11 +172,11 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form">
             <div class="modal-row">
-              <label class="modal-input-title">Дата заезда:</label>
+              <label for="date-from" class="modal-input-title">Дата заезда:</label>
               <div class="modal-input-main">
                 <div class="modal-input-main form">
-                  <input class="modal-input" type="text" value="27 апреля 2020">
-                  <button class="modal-date-button">
+                  <input id="date-from" class="modal-input" type="text" value="27 апреля 2020" required>
+                  <button class="modal-date-button" type="button">
                     <span class="visually-hidden">Выбрать дату</span>
                   </button>
                 </div>
@@ -183,55 +184,53 @@
               </div>
             </div>
             <div class="modal-row">
-              <label class="modal-input-title">Дата выезда:</label>
+              <label for="date-out" class="modal-input-title">Дата выезда:</label>
               <div class="modal-input-main">
                 <div class="modal-input-main form">
-                  <input class="modal-input" type="text" value="1 сентября 2023">
-                  <button class="modal-date-button">
+                    <input class="modal-input" id="date-out" type="text" value="1 сентября 2023" required>
+                  <button class="modal-date-button" type="button">
                     <span class="visually-hidden">Выбрать дату</span>
                   </button>
                 </div>
                 <span class="modal-info accept">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
-            <label class="modal-row adults">
-              <span class="modal-input-title">Взрослые:</span>
+            <div class="modal-row adults">
+             <label for="inputAdult" class="modal-input-title">Взрослые:</label>
               <div class="modal-num-main adults">
-                <input class="modal-input modal-num" type="number" name="adult" value="2">
-                <button class="modal-num-button icon-minus"></button>
-                <button class="modal-num-button icon-plus"></button>
+                 <button class="modal-num-button icon-minus" type="button"></button>
+                 <input id="inputAdult" class="modal-input modal-num" type="number" name="adult" value="2" min="0">
+                 <button class="modal-num-button icon-plus" type="button"></button>
               </div>
-            </label>
-            <div class="modal-row child">
-              <div class="modal-input-title input-title-child">
-               <label for="inputChild">Дети:</label>
-               <div class="tooltip">
-                <button class="tooltip-toggle" type="button">
-                  <span class="visually-hidden">Подробнее о количестве детей</span>
-                </button>
-                <div class="tooltip-text">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                </div>
-              </div>
-            </div>
-            <div class="modal-num-main child">
-              <input class="modal-input modal-num" type="number" name="child" value="2">
-              <button class="modal-num-button icon-minus"></button>
-              <button class="modal-num-button icon-plus"></button>
-            </div>
+             </div>
+             <div class="modal-row child">
+               <div class="modal-input-title input-title-child">
+                 <label for="inputChild">Дети:</label>
+                 <div class="tooltip">
+                   <button class="tooltip-toggle" type="button">
+                     <span class="visually-hidden">Подробнее о количестве детей</span>
+                   </button>
+                 <div class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                 </div>
+               </div>
+             </div>
+             <div class="modal-num-main child">
+               <button class="modal-num-button icon-minus" type="button"></button>
+               <input id="inputChild" class="modal-input modal-num" type="number" name="child" value="2" min="0">
+               <button class="modal-num-button icon-plus" type="button"></button>
+             </div>
            </div>
            <button class="modal-search-button">Найти</button>
           </form>
         </section>
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
       </div>
     </div>
    </div>
-  </body>
 
-  <script>
+   <script>
     const modal = document.querySelector('.modal-container');
     const openBtn = document.querySelector('.intresting-button');
     const closeBtn = document.querySelector('.modal-close-button');
@@ -250,5 +249,6 @@
     }
     });
   </script>
+  </body>
 
 </html>
