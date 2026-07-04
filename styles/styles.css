@@ -644,7 +644,9 @@ input[type="number"]:focus {
 
 .radio {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
   cursor: pointer;
   user-select: none;
   position: relative;
@@ -679,10 +681,12 @@ input[type="number"]:focus {
 }
 
 .radio-label {
-  padding-left: 16px;
   line-height: 1.28;
   color: #FFFFFF;
   font-size: 18px;
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .radio:hover {
