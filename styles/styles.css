@@ -115,6 +115,7 @@ input[type="number"]:focus {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  transition: 0.2s ease;
 }
 
 .navigation-text {
@@ -134,8 +135,13 @@ input[type="number"]:focus {
 }
 
 .navigation-link:hover::after,
+.navigation-link:focus-visible::after,
 .navigation-link.active::after {
   width: calc(100% - 32px);
+}
+
+.navigation-link:active {
+  opacity: 0.5;
 }
 
 .navigation-button {
@@ -153,6 +159,7 @@ input[type="number"]:focus {
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.2s ease;
 }
 
 .navigation-button.search {
@@ -162,6 +169,14 @@ input[type="number"]:focus {
 .navigation-button.favorite {
   background-image: url(../icons/favourite.svg);
   margin-right: 19px;
+}
+
+.navigation-button:hover {
+  opacity: 0.7;
+}
+
+.navigation-button:active {
+  opacity: 0.5;
 }
 
 .favorite-number {
@@ -181,7 +196,7 @@ input[type="number"]:focus {
   font-family: inherit;
   border: none;
   border-radius: 4px;
-  min-width: 160px;
+  width: 160px;
   min-height: 36px;
   padding: 8px 20px;
   font-size: 16px;
